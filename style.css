@@ -1,0 +1,146 @@
+
+/* Body */
+
+body{
+    background-image: url(BG1.png);
+    /* background-repeat: no-repeat; */
+    background-size: 500px;
+    background-attachment: fixed;
+}
+
+/* Container Of Main Div */
+
+.container{
+    display: flex;
+    background-color: rgba(240, 248, 255, 0);
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Contains two Division */
+
+#box{
+    background: rgba(89, 124, 173, 0);
+    -webkit-backdrop-filter: blur(26px);
+    backdrop-filter: blur(26px);
+    border: 5px solid rgba(2, 37, 237, 0.125);
+    display: flex;
+    height: 520px;
+    width: 600px;
+    border-radius: 34px;
+    flex-direction: column ;
+    padding: 10px;
+    margin: 0px;
+    position: fixed;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.input input{
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px;
+    height: 50px;
+    width: 550px;
+    text-align: right;
+    background: rgb(254, 254, 254);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(26px);
+    border: none;
+}
+.input input:focus{
+    outline: none;
+}
+.buttons{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    color: white;
+    cursor: pointer;
+    margin: 8px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 67% 25% 65% 25% / 25% 25% 25% 25%;
+    height: 90px;
+    width: 100px;
+    background: rgba(109, 200, 236, 0);
+    -webkit-backdrop-filter: blur(200px);
+    backdrop-filter: blur(26px);
+    /* border-radius: 10px; */
+    /* background: #5555ff; */
+    /* background: -webkit-linear-gradient(106deg, #5555ff 0%, #bc48ff 100%); */
+    /* background: linear-gradient(106deg, #5555ff 0%, #bc48ff 100%); */
+}
+
+
+
+.container button{
+    color: white;
+    cursor: pointer;
+    margin: 8px;
+    font-size: 1.2rem;
+    border: none;
+    height: 90px;
+    width: 100px;
+    background: rgba(28, 197, 12, 0);
+    border-radius: 67% 25% 65% 25% / 25% 25% 25% 25%; 
+
+}
+button:hover{
+    background: rgba(120, 149, 210, 0.25);
+    -webkit-backdrop-filter: blur(200px);
+    backdrop-filter: blur(26px);
+}
+
+#clearbutton{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 185px;
+}
+
+.history button{
+    color: black;
+    border-radius: 0px;
+    background-color: rgb(127, 227, 255);
+    height: 40px;
+    
+}
+
+
+#history{
+    height: 220px;
+    border-radius: 10px;
+}
+
+.history{
+    background-color: white;
+    height: 500px;
+    width: 200px;
+    display: none;
+    overflow-y: scroll;
+    position: relative;
+    top: 30px;
+    left: 500px;
+    border-radius: 20px;
+}
+.history::-webkit-scrollbar {
+    display: none;
+}
+
+.history .arrange{
+    display: flex;
+    flex-direction: column;
+}
